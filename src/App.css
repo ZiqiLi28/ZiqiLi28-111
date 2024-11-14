@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.play-button {
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.image-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.episodes-section {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.episode {
+  display: flex;
+  justify-content: space-between;
+  background-color: #292929;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.episode-info {
+  display: flex;
+  gap: 15px;
+}
+
+.episode-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.more-options {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.play-icon {
+  cursor: pointer;
+  margin-right: 10px;
+}
