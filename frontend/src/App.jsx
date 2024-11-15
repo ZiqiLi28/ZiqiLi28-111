@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
+import Header from './header/Header.jsx';
+import Footer from './footer/Footer.jsx';
 import podcastImage from './kaleva.png';
 import audio1 from './audio1.mp3';
 import audio2 from './audio2.mp3';
 
-function App() {
+export default function App() {
   const [playingIndex, setPlayingIndex] = useState(null);
   const [audio, setAudio] = useState(null);
   const [playlist, setPlaylist] = useState([]);
@@ -67,16 +69,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header">
-        <div className="text-content">
-          <h1>Kaleva Podcast</h1>
-          <button className="play-button">Listen</button>
-        </div>
-        <div className="image-content">
-          <img src={podcastImage} alt="Podcast" />
-        </div>
-      </div>
-
+      <Header/>
       <div className="episodes-section">
         <div className="episodes-list">
           {episodes.map((episode, index) => (
@@ -141,8 +134,7 @@ function App() {
           </ul>
         </div>
       )}
+      <Footer/>
     </div>
   );
 }
-
-export default App;
