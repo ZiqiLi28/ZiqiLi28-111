@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+  
+.App {
+    width: 100%;
+    height: 100%;
+}
+  
+.episodes3-section {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .episodes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .episode {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .episode-info {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .episode-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+  
+  .more-options {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .play-icon {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .playback-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .playback-info h4 {
+    margin: 0;
+    font-size: 1.1em;
+  }
+  
+  .pause-button {
+    background: #555;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .playlist-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .playlist-section {
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 250px;
+    height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .playlist-section h3 {
+    margin-top: 0;
+  }
+  
+  .playlist-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .playlist-section li {
+    margin-bottom: 10px;
+  }

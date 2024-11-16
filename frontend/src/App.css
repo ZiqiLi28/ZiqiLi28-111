@@ -1,111 +1,66 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #FFFFFF;
-}
-
-.App {
-  width: 100%;
-  height: 100%;
-}
-
-.episodes3-section {
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.episodes-list {
+.audio-page {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.episode {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.episode-info {
-  display: flex;
-  gap: 15px;
-}
-
-.episode-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
-}
-
-.more-options {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.play-icon {
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.playback-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.playback-info h4 {
-  margin: 0;
-  font-size: 1.1em;
+h1 {
+  padding-left: 20px;
 }
 
-.pause-button {
-  background: #555;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.playlist-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
-}
-
-.playlist-section {
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   padding: 20px;
-  position: absolute;
-  top: 50px;
-  right: 20px;
-  width: 250px;
-  height: 300px;
-  overflow-y: auto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.playlist-section h3 {
-  margin-top: 0;
+.main-box {
+  width: 60%;
+  height: 30%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.playlist-section ul {
-  list-style-type: none;
-  padding: 0;
+.main-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.playlist-section li {
+.main-image {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.box-title {
+  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+  text-align: center;
 }
