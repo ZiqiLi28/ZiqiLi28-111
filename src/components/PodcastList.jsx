@@ -1,7 +1,7 @@
 import React from 'react';
 import './PodcastList.css';
 
-export default function PodcastList({ podcasts }) {
+export default function PodcastList({ podcasts, handlePodcastClick }) {
 
   return (
     <div className="podcast-list">

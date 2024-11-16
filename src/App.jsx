@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import PodcastList from "./components/PodcastList.jsx"
 import Header from './header/Header.jsx';
 import Footer from './footer/Footer.jsx';
@@ -16,6 +17,12 @@ import pic6 from './resources/pictures/pic6.jpg';
 import pic7 from './resources/pictures/pic7.jpg';
 
 export default function App() {
+
+  const navigate = useNavigate();
+
+  const handlePodcastClick = (id) => {
+    navigate(`/podcast/${id}`);
+  };
   
   const podcasts = [
     { id: 1, title: "Learning React Basics", category: "Education", duration: "15:30", audio: audio2, image: pic1, uploadDate: "2023-10-01" },
@@ -42,7 +49,7 @@ export default function App() {
             </div>
             <p className="date">16.11.24</p>
           </div>
-          <PodcastList podcasts={podcasts} />
+          <PodcastList podcasts={podcasts} handlePodcastClick={handlePodcastClick} />
         </div>
         <Footer />
       </div>

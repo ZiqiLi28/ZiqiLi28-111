@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from 'react-router-dom';
 import News from "../components/News";
 import Header from '../header/Header.jsx';
 import Footer from '../footer/Footer.jsx';
@@ -18,6 +19,9 @@ const item = {
 };
 
 const NewsPage = () => {
+
+  const { id } = useParams();
+  
   return (
     <>
       <Header />
