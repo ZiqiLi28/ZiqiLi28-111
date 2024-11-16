@@ -26,13 +26,13 @@ export default function App() {
   };
   
   const podcasts = [
-    { id: 1, title: "Learning React Basics", category: "Education", duration: "15:30", audio: audio2, image: pic1, uploadDate: "2023-10-01" },
-    { id: 2, title: "Tech Trends 2024", category: "Technology", duration: "25:45", audio: audio2, image: pic2, uploadDate: "2023-09-20" },
-    { id: 3, title: "Mindful Meditation", category: "Wellness", duration: "10:20", audio: audio1, image: pic3, uploadDate: "2023-11-10" },
-    { id: 4, title: "True Crime Stories", category: "Crime", duration: "35:15", audio: audio2, image: pic4, uploadDate: "2023-08-15" },
-    { id: 5, title: "Startup Success Tips", category: "Business", duration: "20:00", audio: audio1, image: pic5, uploadDate: "2023-10-25" },
-    { id: 6, title: "Adventure Travel Guide", category: "Travel", duration: "18:40", audio: audio2, image: pic6, uploadDate: "2023-07-05" },
-    { id: 7, title: "Cooking with Passion", category: "Food", duration: "22:10", audio: audio1, image: pic7, uploadDate: "2023-09-30" },
+    { id: 1, title: "Learning React Basics", category: "Education", duration: "5:30", audio: audio2, image: pic1, uploadDate: "2023-10-01" },
+    { id: 2, title: "Tech Trends 2024", category: "Technology", duration: "2:45", audio: audio2, image: pic2, uploadDate: "2023-09-20" },
+    { id: 3, title: "Mindful Meditation", category: "Wellness", duration: "0:20", audio: audio1, image: pic3, uploadDate: "2023-11-10" },
+    { id: 4, title: "True Crime Stories", category: "Crime", duration: "3:15", audio: audio2, image: pic4, uploadDate: "2023-08-15" },
+    { id: 5, title: "Startup Success Tips", category: "Business", duration: "2:00", audio: audio1, image: pic5, uploadDate: "2023-10-25" },
+    { id: 6, title: "Adventure Travel Guide", category: "Travel", duration: "8:40", audio: audio2, image: pic6, uploadDate: "2023-07-05" },
+    { id: 7, title: "Cooking with Passion", category: "Food", duration: "2:10", audio: audio1, image: pic7, uploadDate: "2023-09-30" },
   ];
 
   return (

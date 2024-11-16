@@ -12,7 +12,7 @@ const item = {
    Has flung the Stone that puts the Stars to Flight:
    And Lo! the Hunter of the East has caught
    The Sultan's Turret in a Noose of Light.`,
-  duration: "15:30",
+  duration: "1:30",
   audio: "audio2.mp3",
   image: "pic1.jpg",
   uploadDate: "2023-10-01",
