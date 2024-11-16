@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>
   },
   {
-    path: '/podcast',
+    path: '/',
     element: <App></App>,
     children: [
       {
