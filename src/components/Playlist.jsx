@@ -78,7 +78,7 @@ export default function Playlist() {
     
       return (
         <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-          <h2>Podcast Playlist</h2>
+          <h2>Playlist</h2>
           <ul style={{ listStyleType: "none", padding: 0 }}>
             {podcasts.map((podcast) => (
               <li
@@ -174,7 +174,7 @@ export default function Playlist() {
                     cursor: "pointer",
                   }}
                 >
-                  ⏪ 10s
+                  ◀◀ 10s
                 </button>
                 <button
                   onClick={togglePlayPause}
@@ -196,7 +196,7 @@ export default function Playlist() {
                     cursor: "pointer",
                   }}
                 >
-                  10s ⏩
+                  10s ▶▶
                 </button>
               </div>
             </div>
