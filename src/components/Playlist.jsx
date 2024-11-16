@@ -17,7 +17,7 @@ export default function Playlist() {
   const navigate = useNavigate();
 
   const handlePodcastClick = (id) => {
-    navigate(`/podcast/${id}`);
+    navigate(`/${id}`);
   };
 
     const podcasts = [

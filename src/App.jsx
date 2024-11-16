@@ -21,7 +21,8 @@ export default function App() {
   const navigate = useNavigate();
 
   const handlePodcastClick = (id) => {
-    navigate(`/podcast/${id}`);
+    // navigate(`/${id}`);
+    navigate(`/weekly`);
   };
   
   const podcasts = [
@@ -40,7 +41,7 @@ export default function App() {
       <div className="audio-page">
         <h1>Audio</h1>
         <div className="main">
-          <div className="main-box">
+          <div className="main-box" onClick={() => handlePodcastClick(1)}>
             <img src="pic1.jpg" alt="Podcast" className="main-image" />
             <h2 className="box-title">Podcast Title</h2>
             <div className="info-row">
